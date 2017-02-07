@@ -534,7 +534,7 @@ document.addEventListener('DOMContentLoaded', function() {
   //the no. of pizzas will be based upon the window height
   var rows = Math.round(window.screen.height / s);
   var numPizzas = rows * cols;
-  //moved the call to the DOM, outside the for loop to limit the access to DOM
+//moved the call to the DOM, outside the for loop to limit the access to DOM
   var pizzamoves = document.querySelector("#movingPizzas1");
   for (var i = 0; i < numPizzas; i++) {
     var elem = document.createElement('img');
