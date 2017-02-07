@@ -19,6 +19,7 @@ Optimisations made for this are:
 6. Add media = print for css/print.css.
 
 ####Part 2: Optimize Frames per Second in pizza.html
+The live Demo for this part an be found [here](https://riteshthakur961.github.io/frontend-nanodegree-mobile-portfolio/views/pizza.html)
 
 Optimisations made for this are:
 
