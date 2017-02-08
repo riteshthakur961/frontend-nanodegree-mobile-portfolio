@@ -38,3 +38,4 @@ Resources referenced:
 3. http://cssminifier.com/
 4. https://imageoptim.com/
 5. http://jscompress.com/
+6. http://www.jpegreducer.com/
