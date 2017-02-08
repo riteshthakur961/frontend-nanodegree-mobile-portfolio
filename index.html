@@ -10,8 +10,8 @@
 </head>
 <body>
 <header>
-<a href=/><img src=img/profilepic.jpg></a>
-<p>Cameron Pittman<br><span>Course Developer</span></p>
+<a href=/><img src=img/profilepic.jpg class="profile"></a>
+<p class="header-text">Cameron Pittman<br><span class="header-role">Course Developer</span></p>
 </header>
 <div class=container>
 <div class=hero>
@@ -20,24 +20,24 @@
 <div class=content>
 <ul>
 <li>
-<img src="img/2048_pic.jpg">
+<img class="project-img" src="img/2048_pic.jpg">
 <a href=project-2048.html>Build Your Own 2048!</a>
-<p>I made my own version of 2048. How cool is that!?</p>
+<p class="project-desc">I made my own version of 2048. How cool is that!?</p>
 </li>
 <li>
-<img src="img/website.jpg">
+<img class="project-img" src="img/website.jpg">
 <a href=project-webperf.html>Website Performance Optimization</a>
-<p>Hey... this class looks familiar.</p>
+<p class="project-desc">Hey... this class looks familiar.</p>
 </li>
 <li>
-<img src="img/mobile.jpg">
+<img class="project-img" src="img/mobile.jpg">
 <a href=project-mobile.html>Mobile Web Development</a>
-<p>Making mobile apps isn't so hard after all.</p>
+<p class="project-desc">Making mobile apps isn't so hard after all.</p>
 </li>
 <li>
-<img style=width:100px src=views/images/pizzeria.jpg>
+<img class="project-img" style=width:100px src=views/images/pizzeria.jpg>
 <a href=views/pizza.html>Cam's Pizzeria</a>
-<p>Who wants a performant pizza?</p>
+<p class="project-desc">Who wants a performant pizza?</p>
 </li>
 </ul>
 </div>
@@ -45,9 +45,11 @@
 <p>&copy; Web Performance 2014 <span id=crp-stats></span></p>
 </footer>
 </div>
-<style>.hero,footer{border-top:1px solid #ccc}footer span,li p{font-style:italic}html{font-size:100%;overflow-y:scroll;-webkit-tap-highlight-color:transparent;-ms-text-size-adjust:100%;-webkit-text-size-adjust:none}body{margin:0;font-size:14px;line-height:1.61;font-weight:400;background:#fff}b,header p,strong{font-weight:700}body,button,input,select,textarea{font-family:'Open Sans',sans-serif;color:#333}a{color:#12C}a:visited{color:#61C}a:focus{outline:dotted thin}a:active,a:hover{color:#c00;outline:0}code,pre{font-family:monospace,monospace;font-size:1em}ol,ul{margin:1em 0;padding:0 0 0 20px}img{border:0;max-width:100%}.container,footer,header{max-width:45em;margin:0 auto}header{padding:0 .5em;color:#c90b0b}header img{border-radius:40px;float:left}header p{font-size:1.5em;padding-left:4em}header p span{font-size:.8em;font-weight:400}.hero{padding:2em;background-color:#f8f8f8;font-size:1.2em;border-bottom:1px solid #ccc}.content{padding:1em}.content li{list-style-type:none;font-size:1.1em}li img{float:left;padding-right:1em}li p{font-size:.9em}footer{padding:0 .5em}footer span{float:right}@media only screen and (max-width:480px){body{font-size:12px}header p{padding-left:4.5em}}</style>
+<style>.hero,footer{border-top:1px solid #ccc}html{-webkit-tap-highlight-color:transparent}body{margin:0;font-size:14px;line-height:1.61;font-weight:400;background:#fff;font-family:'Open Sans',sans-serif;color:#333}a{color:#12C}a:visited{color:#61C}a:focus{outline:dotted thin}a:active,a:hover{color:#c00;outline:0}ul{margin:1em 0;padding:0 0 0 20px}img{border:0;max-width:100%}.container,footer,header{max-width:45em;margin:0 auto}header{padding:0 .5em;color:#c90b0b}.profile{border-radius:40px;float:left}.header-text{font-size:1.5em;padding-left:4em;font-weight:700}.header-role{font-size:.8em;font-weight:400}.hero{padding:2em;background-color:#f8f8f8;font-size:1.2em;border-bottom:1px solid #ccc}.content{padding:1em}.content li{list-style-type:none;font-size:1.1em}.project-img{float:left;padding-right:1em}.project-desc{font-size:.9em;font-style:italic}footer{padding:0 .5em}#crp-stats{float:right;font-style:italic}@media only screen and (max-width:480px){body{font-size:12px}header p{padding-left:4.5em}}</style>
+<script async src="js/perfmatters.js"></script>
+<script>
+WebFontConfig={google:{families:["Open+Sans:400,700:latin"]}},function(){var t=document.createElement("script");t.src=("https:"==document.location.protocol?"https":"http")+"://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js",t.type="text/javascript",t.async="true";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}();</script>
 <script>(function(a,b){a.GoogleAnalyticsObject=b;a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)};a[b].l=1*new Date()})(window,"ga");ga("create","UA-XXXX-Y");ga("send","pageview");</script>
 <script async src=http://www.google-analytics.com/analytics.js></script>
-<script function logCRP(){var o=window.performance.timing,n=o.domContentLoadedEventStart-o.domLoading,t=o.domComplete-o.domLoading,d=document.getElementById("crp-stats");d.textContent="DCL: "+n+"ms, onload: "+t+"ms"}window.addEventListener("load",function(o){logCRP()});</script>
 </body>
 </html>

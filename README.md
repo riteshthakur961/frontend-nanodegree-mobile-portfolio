@@ -39,3 +39,4 @@ Resources referenced:
 4. https://imageoptim.com/
 5. http://jscompress.com/
 6. http://www.jpegreducer.com/
+7. https://gist.github.com/joemccann/733583
